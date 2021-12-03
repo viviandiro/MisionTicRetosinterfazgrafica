@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Consultas de cubiculo</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/cubiculoFunciones.js"></script>
+        
+        <link rel="stylesheet" type = text/css href="diseño.css" media="screen" />
+
+    </head>
+
+  <body>
+  <center>
+    <h2 style="color: #41afeb;">CONSULTA DE LIBRERIA</h2>
+    <hr style="width: 20%;">
+      <fieldset style="width: 40%;" >
+       <legend style="color: #0F86C8;">Datos de libreria</legend>
+        <table   border="0" width="100%">
+          
+          <p>
+          <thead>
+            <tr>
+              <th style="color: #1c4797;">ID</th>
+              <td><input id="id" type="number" placeholder="Digita el id" maxlength="20">
+               </td>
+            </tr>
+              <td >
+               <figure>
+                <span id="btnConsultar" onclick="consultar()"><img alt="Smiley face" src="img/buscar.png" ></span>
+                <figcaption style="color: #1c4797;">Consultar</figcaption></figure>
+                &nbsp;&nbsp;
+                </td>
+                <td>
+                <figure><span id="btnConsultarId" onclick="consultarPorId($('#id'))"><img alt="Smiley face" src="img/BuscarId.jpg" ></span>
+                <figcaption style="color: #1c4797;">Consultar id</figcaption></figure>
+                &nbsp;
+                </td>
+                <td>
+                <figure><span id="btnActualizar" onclick="tablaActualizar()"><img alt="Smiley face" src="img/actualizar.jpg" ></span>
+                <figcaption style="color: #1c4797;">Actualizar</figcaption></figure>
+                &nbsp;&nbsp;
+                </td>
+                <td>
+                <figure><span in="btnGuardar" onclick="crearTablaGuardar()"><img alt="Smiley face" src="img/guardar.jpg" ></span>
+                <figcaption style="color: #1c4797;">Guardar</figcaption></figure>
+                &nbsp;&nbsp;
+                </td>
+                <td>
+                <figure><span id="btnLimpiar"  onclick="limpiarFormulario()"> <img alt="Smiley face" src="img/limpiar.png" ></span>
+             <figcaption style="color: #1c4797;">Limpiar</figcaption></figure>
+             &nbsp;&nbsp;
+            </td>
+          </tr>
+          </table>
+
+        <p>
+          <figure><span><a href="http://localhost:52330/index.html"> <img alt="Smiley face" src="img/volver.png" ></a></span>
+        <div id="resultado"></div>
+      </center>
+     </fieldset>
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+body {
+  font-family:'Siglo XXI', fantasía, Comic sans Ms;
+        
+}
+figcaption {
+    display:none; 
+    transition: all .5s;
+    }
+    figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+    }
+    table{
+      background-color: #94f0d4 
+    }
