@@ -1,2 +1,2 @@
-# Retosinterfazgrafica
-interfaz grafica retos 3,4,5
+# Reto2Online
+repositorio para el front del projecto
