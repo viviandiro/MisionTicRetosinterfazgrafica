@@ -14,7 +14,7 @@ function consultar()
                 $("#resultado").empty();
               
                 tabla = "<center><table  border='1'><tr><th style='color: #0F86C8;'>ID<th style='color: #0F86C8;'>EMAIL<th style='color: #0F86C8;'>PASSWORD" +
-                "<th style='color: #0F86C8;'>NOMBRE<th style='color: #0F86C8;'>EDAD<th style='color: #0F86C8;'>LISTMENSAJES<th style='color: #0F86C8;'>LISTRESERVACION"+
+                "<th style='color: #0F86C8;'>NOMBRE<th style='color: #0F86C8;'>EDAD"+
                 "<th style='color: #0F86C8;'>ELIMINAR"
                 
                 filas = ""
@@ -25,8 +25,8 @@ function consultar()
                     filas += "<td>" + response[i].password + "</td>",
                     filas += "<td>" + response[i].name + "</td>",
                     filas += "<td>" + response[i].age + "</td>",
-                    filas += "<td>" + response[i].messages + "</td>",
-                    filas += "<td>" + response[i].reservations+ "</td>",
+                    //filas += "<td>" + response[i].messages + "</td>",
+                    //filas += "<td>" + response[i].reservations+ "</td>",
                     filas += "<td><button  onclick='Eliminar("+ response[i].idClient +")'>ELIMINAR</button>"
                 }
                 $("#resultado").append(tabla + filas  + "</center>")
